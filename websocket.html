@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <!-- Compiled and minified JavaScript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body style="background-color:rgb(15, 10, 10)">
+    <div style="background-color:rgb(233, 233, 233);
+    padding: 10px; 
+     width: 30%;
+     margin-top: 100px;
+     border-radius: 10px;
+    " class="container">
+        <h1 style="box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+        font-size:2em;
+        padding:10px;
+        text-align:center;">Chat Box App :</h1>
+        <h6>Connection</h6>
+        <div class="row">
+            <form action="javascript:void(0)" method="POST" class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="message">Message</label>
+                        <input type="text" id="message" name="message" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <button class="waves-effect waves-light btn">Submit</button>
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div style="padding: 10px;
+                     box-shadow: inset 2px 2px 22px 8px rgba(0,0,0,0.38);
+                     border-radius: 10px;
+                    " class="message">
+                        <h5 style="padding: 10px;
+                          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+                        ">Messages</h5>
+                    </div>
+                </div>
+        </div>
+        </form>
+    </div>
+    </div>
+
+
+
+    <script src="websocket-client.js"></script>
+</body>
+
+</html>
